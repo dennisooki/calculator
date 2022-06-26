@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <form name="form">
+            <div class="display">
+                <input type="text" id="display" placeholder="0" name="displayResult" />
+            </div>
+            <div class="buttons">
+
+                <div class="row">
+                    <input type="button" id="clear" value="CL">
+                   <input type="button" id="del" value="del">
+               </div>
+
+                <div class="row">
+                    <input type="button" name="b7" value="7" onClick="appendNum(b7.value)">
+                    <input type="button" name="b8" value="8" onClick="appendNum(b8.value)">
+                    <input type="button" name="b9" value="9" onClick="appendNum(b9.value)">
+                    <input type="button" name="addb" value="+" onClick="appendNum(addb.value)">
+                </div>
+
+                <div class="row">
+                    <input type="button" name="b4" value="4" onClick="appendNum(b4.value)">
+                    <input type="button" name="b5" value="5" onClick="appendNum(b5.value)">
+                    <input type="button" name="b6" value="6" onClick="appendNum(b6.value)">
+                    <input type="button" name="subb" value="-" onClick="appendNum(subb.value)">
+                </div>
+
+                <div class="row">
+                    <input type="button" name="b1" value="1" onClick="appendNum(b1.value)">
+                    <input type="button" name="b2" value="2" onClick="appendNum(b2.value)">
+                    <input type="button" name="b3" value="3" onClick="appendNum(b3.value)">
+                    <input type="button" name="mulb" value="*" onClick="appendNum(mulb.value)">
+                </div>
+
+                <div class="row">
+                    <input type="button" name="b0" value="0" onClick="appendNum(b0.value)">
+                    <input type="button" name="potb" value="." onClick="appendNum(potb.value)">
+                    <input type="button" name="divb" value="/" onClick="appendNum(divb.value)">
+                    <input type="button" id="calculate" class="red" value="=" >
+                </div>
+            </div>
+
+        </form>
+    </div>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
+
